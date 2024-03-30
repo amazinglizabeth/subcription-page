@@ -371,6 +371,15 @@ body {
   border: none;
 }
 
+.hidden {
+  display: none;
+  padding-bottom: 35%;
+}
+
+.visible {
+  display: block;
+}
+
 @media screen and (min-width: 300px) {
   .mainPage {
     display: flex;

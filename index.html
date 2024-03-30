@@ -57,7 +57,7 @@
             </div>
           </div>
           <div class="cardBack">
-            <input type="number" placeholder="MM/YY" required />
+            <input type="text" placeholder="MM/YY" required />
             <input type="number" placeholder="CVC" required />
           </div>
           <p>Cardholder Name</p>
@@ -96,8 +96,11 @@
           </p>
         </div>
         <div class="subscribeButton">
-          <button type="submit">Subscribe</button>
+          <button id="toggleButton" type="submit">Subscribe</button>
         </div>
+        <p id="displayText" class="hidden">
+          Your monthly newsletter subscription is succesful.
+        </p>
       </div>
     </div>
     <script src="style.js"></script>
