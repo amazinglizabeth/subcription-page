@@ -377,6 +377,16 @@ body {
     flex-direction: column;
     width: 100%;
   }
+
+  .newsletter {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+  .subscriptionPage {
+    width: 100%;
+  }
+
   .cardIcon > img {
     width: 8px;
     height: 10px;
