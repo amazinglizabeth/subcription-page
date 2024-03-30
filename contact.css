@@ -380,16 +380,28 @@ body {
 
   .newsletter {
     width: 100%;
-    margin-bottom: 5%;
+    margin-bottom: 8%;
+    padding-left: 7%;
   }
 
   .subscriptionPage {
     width: 100%;
+    padding-right: 3%;
   }
 
   .cardIcon > img {
     width: 8px;
     height: 10px;
+  }
+
+  .cardBack > input {
+    border: 2px solid rgba(45, 44, 44, 0.075);
+    outline: none;
+    border-top: none;
+    border-right: none;
+    padding-left: 10px;
+    width: 50%;
+    height: 30px;
   }
 }
 @media screen and (min-width: 768px) {
