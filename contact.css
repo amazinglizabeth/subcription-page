@@ -370,3 +370,38 @@ body {
   font-weight: 500;
   border: none;
 }
+
+@media screen and (min-width: 300px) {
+  .mainPage {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .cardIcon > img {
+    width: 8px;
+    height: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .cardIcon > img {
+    width: 8px;
+    height: 10px;
+    text-align: end;
+    width: auto;
+    height: auto;
+    max-width: 20px;
+    max-height: 10px;
+    object-fit: cover;
+    justify-content: flex-end;
+    margin-right: 3px;
+    align-items: center;
+  }
+  .mainPage {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .mainPage {
+    height: 100%;
+  }
+}
