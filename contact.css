@@ -1,0 +1,372 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  font-family: inter, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.mainPage {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.newsletter {
+  width: 50%;
+  background-color: #fcfcfc;
+  padding-left: 2%;
+  margin-top: 15px;
+  padding-right: 7%;
+}
+
+.previous {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: row;
+}
+
+.previous > img {
+  width: 20px;
+  margin-top: 9px;
+}
+
+.previous > a {
+  margin-top: 10px;
+  color: rgba(84, 82, 82, 0.549);
+  margin-left: 15px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.newsletter > h4 {
+  font-size: 14px;
+  margin-top: 28px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.637);
+}
+
+.rate {
+  display: flex;
+  flex-direction: row;
+  color: rgba(74, 75, 255, 1);
+  margin-top: 5px;
+}
+
+.rate > h3 {
+  color: rgba(74, 75, 255, 1);
+  font-size: 30px;
+  letter-spacing: 3px;
+}
+
+.rate p {
+  margin-left: 12px;
+  font-size: 10px;
+  font-weight: 700;
+  max-width: 10px;
+  margin-top: 6px;
+  line-height: 12px;
+}
+
+.PriceTag {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.monthlySub {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  color: rgba(0, 0, 0, 0.637);
+}
+
+.monthlySub > p {
+  margin-right: 40px;
+  text-align: end;
+  flex: 1;
+  font-weight: 600;
+}
+
+.PriceTag > p {
+  color: rgba(0, 0, 0, 0.637);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.border {
+  border-bottom: 1px solid rgba(177, 172, 172, 0.637);
+  margin-top: 30px;
+}
+
+.subTotal {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  color: rgba(0, 0, 0, 0.637);
+}
+
+.subTotal > p {
+  margin-right: 40px;
+  text-align: end;
+  flex: 1;
+  font-weight: 600;
+}
+
+.total {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  color: rgba(0, 0, 0, 0.637);
+}
+
+.total > {
+  font-weight: 700;
+}
+
+.total > p {
+  margin-right: 40px;
+  text-align: end;
+  flex: 1;
+  font-weight: 700;
+}
+
+.subscriptionPage {
+  margin-top: 3%;
+  padding-right: 4%;
+  padding-left: 7%;
+  width: 50%;
+  padding-bottom: 17px;
+}
+
+.subscriptionPage > h3 {
+  color: rgba(74, 75, 255, 1);
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.email {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid rgba(103, 101, 101, 0.038);
+  background-color: rgb(211, 223, 242);
+  max-width: 100%;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.email > p {
+  color: rgba(60, 58, 58, 0.465);
+  margin-left: 2px;
+  font-size: 12px;
+  font-weight: 600;
+  padding-left: 10px;
+}
+
+.email > input {
+  flex: 1;
+  text-align: center;
+  justify-content: center;
+  background-color: rgb(211, 223, 242);
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  height: 30px;
+}
+
+.paymentInfo > h3 {
+  color: rgba(74, 75, 255, 1);
+  margin-top: 22px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.paymentInfo > p {
+  font-size: 12px;
+  margin-top: 12px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.916);
+}
+
+.cardFront {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid rgba(45, 44, 44, 0.075);
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cardFront > input {
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  height: 30px;
+}
+
+.cardIcon > img {
+  flex: 1;
+  width: 10px;
+  height: 15px;
+  text-align: end;
+  width: auto;
+  height: auto;
+  max-width: 25px;
+  max-height: 12px;
+  object-fit: cover;
+  justify-content: flex-end;
+  margin-right: 4px;
+  align-items: center;
+}
+
+.cardBack {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border: 2px solid rgba(45, 44, 44, 0.075);
+}
+
+.cardBack > input {
+  border: 2px solid rgba(45, 44, 44, 0.075);
+  outline: none;
+  border-top: none;
+  border-right: none;
+  padding-left: 10px;
+  width: 100%;
+  height: 30px;
+}
+
+.cardHolder {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border: 2px solid rgba(45, 44, 44, 0.075);
+}
+
+.cardHolder > input {
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  height: 30px;
+}
+
+.cardBack > p {
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  height: 30px;
+}
+
+.billingAddress {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 2px solid rgba(45, 44, 44, 0.075);
+}
+
+.billingAddress > input {
+  border: 2px solid rgba(100, 99, 99, 0.075);
+  outline: none;
+  padding-left: 10px;
+  height: 30px;
+}
+
+.city {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid rgba(45, 44, 44, 0.075);
+}
+
+.city > input {
+  border: 2px solid rgba(45, 44, 44, 0.075);
+  outline: none;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  padding-left: 10px;
+  width: 100%;
+  height: 25px;
+}
+
+.checkout {
+  display: flex;
+  width: 100%;
+  border: 2px solid rgba(45, 44, 44, 0.075);
+  margin-top: 10px;
+  min-height: 78px;
+  flex-direction: column;
+  padding-bottom: 5px;
+}
+
+.checkoutHead {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.tickBox > input {
+  width: 20px;
+  height: 17px;
+  border: 2px solid rgba(74, 75, 255, 1);
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.checkoutHead > h5 {
+  margin-top: 9px;
+  margin-left: 15px;
+  font-weight: 600;
+}
+
+.checkout > p {
+  color: rgba(45, 44, 44, 0.52);
+  margin-top: 9px;
+  margin-left: 50px;
+  font-size: 14px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.policy {
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+  min-height: 78px;
+}
+
+.policy > p {
+  color: rgba(45, 44, 44, 0.52);
+  margin-top: 9px;
+  margin-left: 20px;
+  font-size: 15px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 90%;
+  line-height: 22px;
+}
+
+.policy span {
+  color: rgba(74, 75, 255, 1);
+}
+
+.subscribeButton {
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.subscribeButton > button {
+  background-color: rgba(74, 75, 255, 1);
+  color: rgb(255, 255, 255);
+  width: 100%;
+  height: 43px;
+  font-size: 15px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  border: none;
+}
