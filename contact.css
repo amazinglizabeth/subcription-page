@@ -16,7 +16,6 @@ body {
   display: flex;
   flex-direction: row;
   width: 100%;
-  min-height: 100%;
 }
 
 .newsletter {
@@ -25,7 +24,7 @@ body {
   padding-left: 2%;
   margin-top: 15px;
   padding-right: 7%;
-  min-height: 100%;
+  min-height: 100vh;
 }
 
 .previous {
