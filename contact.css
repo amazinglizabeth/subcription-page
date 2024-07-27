@@ -10,6 +10,19 @@ body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: var(--primary-color);
+}
+
+:root {
+  --primary-color: #fff;
+  --secondary-color: grey;
+  --accent-color: #0f0fe8;
+}
+
+.dark-theme {
+  --primary-color: #121212;
+  --secondary-color: #f1f1f1;
+  --accent-color: #bcbcfb;
 }
 
 .mainPage {
@@ -19,9 +32,26 @@ body {
   min-height: 100%;
 }
 
+#modeToggle {
+  display: flex;
+  background: var(--primary-color);
+  padding: 8px 20px;
+  cursor: pointer;
+  border: 1px solid rgb(232, 228, 228);
+  color: var(--accent-color);
+  align-items: center;
+  text-align: center;
+  gap: 3px;
+}
+
+#modeToggle img {
+  width: 30px;
+  padding-right: 5%;
+}
+
 .newsletter {
   width: 50%;
-  background-color: #fcfcfc;
+  background-color: var(--primary-color);
   padding-left: 2%;
   margin-top: 15px;
   padding-right: 7%;
@@ -41,7 +71,7 @@ body {
 
 .previous > a {
   margin-top: 10px;
-  color: rgba(84, 82, 82, 0.549);
+  color: var(--secondary-color);
   margin-left: 15px;
   font-size: 12px;
   font-weight: 500;
@@ -51,18 +81,18 @@ body {
   font-size: 14px;
   margin-top: 28px;
   font-weight: 700;
-  color: rgba(0, 0, 0, 0.637);
+  color: var(--secondary-color);
 }
 
 .rate {
   display: flex;
   flex-direction: row;
-  color: rgba(74, 75, 255, 1);
+  color: var(--accent-color);
   margin-top: 5px;
 }
 
 .rate > h3 {
-  color: rgba(74, 75, 255, 1);
+  color: var(--accent-color);
   font-size: 30px;
   letter-spacing: 3px;
 }
@@ -86,7 +116,7 @@ body {
   display: flex;
   flex-direction: row;
   margin-top: 30px;
-  color: rgba(0, 0, 0, 0.637);
+  color: var(--secondary-color);
 }
 
 .monthlySub > p {
@@ -97,13 +127,13 @@ body {
 }
 
 .PriceTag > p {
-  color: rgba(0, 0, 0, 0.637);
+  color: var(--secondary-color);
   font-size: 12px;
   font-weight: 600;
 }
 
 .border {
-  border-bottom: 1px solid rgba(177, 172, 172, 0.637);
+  border-bottom: 1px solid var(--secondary-color);
   margin-top: 30px;
 }
 
@@ -111,7 +141,7 @@ body {
   display: flex;
   flex-direction: row;
   margin-top: 30px;
-  color: rgba(0, 0, 0, 0.637);
+  color: var(--secondary-color);
 }
 
 .subTotal > p {
@@ -125,7 +155,7 @@ body {
   display: flex;
   flex-direction: row;
   margin-top: 30px;
-  color: rgba(0, 0, 0, 0.637);
+  color: var(--secondary-color);
 }
 
 .total > {
@@ -140,6 +170,7 @@ body {
 }
 
 .subscriptionPage {
+  background-color: var(--primary-color);
   margin-top: 3%;
   padding-right: 4%;
   padding-left: 7%;
@@ -148,7 +179,7 @@ body {
 }
 
 .subscriptionPage > h3 {
-  color: rgba(74, 75, 255, 1);
+  color: var(--accent-color);
   font-weight: 500;
   font-size: 16px;
 }
@@ -156,15 +187,16 @@ body {
 .email {
   display: flex;
   flex-direction: row;
-  border: 2px solid rgba(103, 101, 101, 0.038);
-  background-color: rgb(211, 223, 242);
+  border: 2px solid var(--secondary-color);
+  background-color: var(--primary-color);
   max-width: 100%;
   align-items: center;
   margin-top: 5px;
 }
 
 .email > p {
-  color: rgba(60, 58, 58, 0.465);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   margin-left: 2px;
   font-size: 12px;
   font-weight: 600;
@@ -175,7 +207,7 @@ body {
   flex: 1;
   text-align: center;
   justify-content: center;
-  background-color: rgb(211, 223, 242);
+  background-color: var(--primary-color);
   border: none;
   outline: none;
   padding-left: 10px;
@@ -183,7 +215,7 @@ body {
 }
 
 .paymentInfo > h3 {
-  color: rgba(74, 75, 255, 1);
+  color: var(--accent-color);
   margin-top: 22px;
   font-weight: 500;
   font-size: 16px;
@@ -193,19 +225,20 @@ body {
   font-size: 12px;
   margin-top: 12px;
   font-weight: 600;
-  color: rgba(0, 0, 0, 0.916);
+  color: var(--secondary-color);
 }
 
 .cardFront {
   display: flex;
   flex-direction: row;
-  border: 2px solid rgba(45, 44, 44, 0.075);
+  border: 2px solid var(--secondary-color);
   width: 100%;
   align-items: center;
   justify-content: space-between;
 }
 
 .cardFront > input {
+  background-color: var(--primary-color);
   border: none;
   outline: none;
   padding-left: 10px;
@@ -231,11 +264,13 @@ body {
   display: flex;
   flex-direction: row;
   width: 100%;
-  border: 2px solid rgba(45, 44, 44, 0.075);
+  border: 2px solid var(--secondary-color);
+  background-color: var(--primary-color);
 }
 
 .cardBack > input {
-  border: 2px solid rgba(45, 44, 44, 0.075);
+  background-color: var(--primary-color);
+  border: 2px solid var(--secondary-color);
   outline: none;
   border-top: none;
   border-right: none;
@@ -248,10 +283,11 @@ body {
   display: flex;
   flex-direction: row;
   width: 100%;
-  border: 2px solid rgba(45, 44, 44, 0.075);
+  border: 2px solid var(--secondary-color);
 }
 
 .cardHolder > input {
+  background-color: var(--primary-color);
   border: none;
   outline: none;
   padding-left: 10px;
@@ -269,11 +305,12 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  border: 2px solid rgba(45, 44, 44, 0.075);
+  border: 2px solid var(--secondary-color);
 }
 
 .billingAddress > input {
-  border: 2px solid rgba(100, 99, 99, 0.075);
+  border: 2px solid var(--secondary-color);
+  background-color: var(--primary-color);
   outline: none;
   padding-left: 10px;
   height: 30px;
@@ -282,11 +319,12 @@ body {
 .city {
   display: flex;
   flex-direction: row;
-  border: 2px solid rgba(45, 44, 44, 0.075);
+  border: 2px solid var(--secondary-color);
 }
 
 .city > input {
-  border: 2px solid rgba(45, 44, 44, 0.075);
+  border: 2px solid var(--secondary-color);
+  background-color: var(--primary-color);
   outline: none;
   border-top: none;
   border-right: none;
@@ -299,7 +337,7 @@ body {
 .checkout {
   display: flex;
   width: 100%;
-  border: 2px solid rgba(45, 44, 44, 0.075);
+  border: 2px solid var(--secondary-color);
   margin-top: 10px;
   min-height: 78px;
   flex-direction: column;
@@ -307,6 +345,7 @@ body {
 }
 
 .checkoutHead {
+  color: var(--secondary-color);
   display: flex;
   flex-direction: row;
   margin-top: 10px;
@@ -315,7 +354,7 @@ body {
 .tickBox > input {
   width: 20px;
   height: 17px;
-  border: 2px solid rgba(74, 75, 255, 1);
+  border: 2px solid var(--accent-color);
   margin-left: 15px;
   margin-top: 15px;
 }
@@ -327,7 +366,7 @@ body {
 }
 
 .checkout > p {
-  color: rgba(45, 44, 44, 0.52);
+  color: var(--secondary-color);
   margin-top: 9px;
   margin-left: 50px;
   font-size: 14px;
@@ -342,7 +381,7 @@ body {
 }
 
 .policy > p {
-  color: rgba(45, 44, 44, 0.52);
+  color: var(--secondary-color);
   margin-top: 9px;
   margin-left: 20px;
   font-size: 15px;
@@ -351,8 +390,8 @@ body {
   line-height: 22px;
 }
 
-.policy span {
-  color: rgba(74, 75, 255, 1);
+.spanText {
+  color: var(--accent-color);
 }
 
 .subscribeButton {
@@ -362,8 +401,8 @@ body {
 }
 
 .subscribeButton > button {
-  background-color: rgba(74, 75, 255, 1);
-  color: rgb(255, 255, 255);
+  background-color: var(--accent-color);
+  color: #fff;
   width: 100%;
   height: 43px;
   font-size: 15px;
@@ -409,7 +448,7 @@ body {
     display: flex;
     flex-direction: row;
     width: 100%;
-    border: 2px solid rgba(45, 44, 44, 0.075);
+    border: 2px solid var(--secondary-color);
   }
 
   .cardBack > input {
