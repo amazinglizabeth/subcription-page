@@ -430,13 +430,15 @@ body {
 
   .newsletter {
     width: 100%;
-    margin-bottom: 8%;
+    min-height: 0;
     padding-left: 7%;
+    margin-bottom: 5%;
   }
 
   .subscriptionPage {
     width: 100%;
     padding-right: 7%;
+    margin-top: 10%;
   }
 
   .cardIcon > img {
